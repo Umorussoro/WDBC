@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2</title>
+</head>
+
+<body>
+    <h2>Creating a table</h2>
+    <hr>
+    <!-- We use table to manage text to be a same level on a horizontal line-->
+    <table border="1">
+        <!-- tr means table rows and td means table data-->
+        <thead>
+            <!-- Always use to create head of table which will bold text automatically
+        Although we can ignore to not use it, We should use it to select part of table and style them-->
+            <tr>
+                <th>Date</th> <!-- th means top head tag which will also automatically bold the text-->
+                <th>Learning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Use to seperate from the header and easily select them to style and manage-->
+            <tr>
+                <td>2006-2018</td>
+                <td>I am studying in ACSP school</td>
+            </tr>
+            <tr>
+                <td>now</td>
+                <td>I'm studying at KMUTT in the department of mechatronics</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- It also have a footer part that we can use-->
+        </tfoot>
+        <!-- Important thing is that the attribute for styling the table is already deprecated.
+        As you can see in the MDN platform, the attributes which are deprecated will have a little thumb down sign.-->
+
+    </table>
+    <h2>We can use table tag to position other components on your website</h2>
+    <table cellspacing="30">
+        <!--cell spacing is an attribute that is used to space between cell-->
+        <tr>
+            <td>
+                <img src="https://i.pinimg.com/originals/1a/4b/cc/1a4bcc6e66eea6c53eb112edc9019f72.jpg"
+                    alt="Cant show Image" width="150px">
+            </td>
+            <td>
+                <h2>Eimi Fukade</h2>
+                <p>The best leader model that I am interested in</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Challenge from module 2 in the course.</h2>
+    <h3>Creating your skill set by using table and emoji</h3>
+    <hr>
+    <h2>My skill set</h2><!-- In window 10 you can type emojis by press WIN + .(fullstop)-->
+    <table cellspacing="10px">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Basic Python</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Arduino</td>
+                        <td>⭐⭐⭐⭐✰</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>English communication</td>
+                        <td>⭐⭐✰✰✰</td>
+                    </tr>
+                    <tr>
+                        <td>Control Design</td>
+                        <td>⭐⭐⭐✰✰</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    
+    <h3>Here is an example to create forms and other components</h3><!-- We can use form tag.-->
+    <form><!--use input tag to make user fill their information-->
+        <label>Your Name:</label>
+        <input type="text">
+        <input type="password"><!--Remind that input is a self-closing tag--->
+        <input type="submit"><!-- Can see more in mdn website (input element)-->
+        <input type="color">
+        <input type="checkbox">
+        <input type="month">
+    </form>
+    <h2>Next is a textarea where user can type their message.</h2><!-- Using textarea tag-->
+    <!--row = height,cols = width-->
+    <textarea row="8" cols="80">
+    </textarea>
+    <hr>
+    <h2>Challenge:Create email sending form</h2>
+    <form action="mailto:supakarn.um@mail.kmutt.ac.th" method="POST" enctype="text/plain">
+        <label>Your Name:</label>
+        <input type="text" name="Name" value=""><br>
+        <label>Your Email:</label>
+        <input type="email" name="Email" value=""><br>
+        <label>Your Message:</label><br>
+        <textarea name="Message"></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
